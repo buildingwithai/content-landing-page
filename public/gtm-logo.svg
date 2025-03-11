@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path fill="#2c5d63" d="M50 0L6.7 25v50L50 100l43.3-25V25L50 0z"/>
+  <path fill="#a8c5d6" d="M50 10L16.7 30v40L50 90l33.3-20V30L50 10z"/>
+  <text x="50" y="55" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c5d63">GTM</text>
+  <text x="50" y="70" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#2c5d63">LABS</text>
+</svg>
