@@ -12,8 +12,8 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({
-  title = "Streamline Your Social Content Approval Process",
-  subtitle = "Empower your clients with a seamless approval workflow that saves time and eliminates confusion.",
+  title = "Social Media for Your Local Business—Without the Hefty Agency Price",
+  subtitle = "We plan, design, and schedule every post. You just log in, approve, and watch your brand grow—no $2,500 retainers required.",
   ctaText = "Let's chat!",
   onCtaClick = () =>
     window.open("https://zcal.co/jovannytovar/content", "_blank"),
@@ -63,9 +63,9 @@ const HeroSection = ({
   }, [isAnimating]);
 
   const comparisonData = [
-    { provider: "Content Agencies", cost: 2500, savings: 2401 },
-    { provider: "Freelancers", cost: 750, savings: 651 },
-    { provider: "GTM LABS", cost: 99, savings: 0 },
+    { provider: "Content Agencies", cost: 2500, savings: 2251 },
+    { provider: "Freelancers", cost: 750, savings: 501 },
+    { provider: "GTM LABS", cost: 249, savings: 0 },
   ];
 
   const benefits = [
@@ -171,9 +171,7 @@ const HeroSection = ({
                 >
                   <div>
                     <h4 className="font-medium">{item.provider}</h4>
-                    <p className="text-sm text-gray-400">
-                      20 Social Media Posts/Month
-                    </p>
+                    <p className="text-sm text-gray-400"></p>
                   </div>
                   <div className="text-right">
                     <div className="text-xl font-bold">${item.cost}</div>
