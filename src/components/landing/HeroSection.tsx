@@ -12,7 +12,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({
-  title = "Social Media for Your Local Business—Without the Hefty Agency Price",
+  title = "Tech-Enabled Social Media Marketing Without the Hefty Agency Price",
   subtitle = "We plan, design, and schedule every post. You just log in, approve, and watch your brand grow—no $2,500 retainers required.",
   ctaText = "Let's chat!",
   onCtaClick = () =>
@@ -84,14 +84,14 @@ const HeroSection = ({
     <section
       ref={sectionRef}
       onMouseMove={handleMouseMove}
-      className="relative w-full h-[800px] overflow-hidden mt-16"
+      className="relative w-full min-h-[800px] overflow-hidden mt-16"
       style={{
         background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #1a1a2e 0%, #121212 70%)`,
         transition: "background 0.3s ease",
       }}
     >
-      <div className="container mx-auto px-4 h-full py-24 pb-32">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 h-full items-center">
+      <div className="container mx-auto px-4 h-full py-12 md:py-24 pb-16 md:pb-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 h-full items-center">
           {/* Left Column - Content */}
           <div className="text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
@@ -157,9 +157,9 @@ const HeroSection = ({
           </div>
 
           {/* Right Column - Cost Calculator */}
-          <div className="bg-gray-900/50 p-8 rounded-xl border border-gray-800 text-white relative overflow-hidden group transition-all duration-500 hover:border-blue-500 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)]">
+          <div className="bg-gray-900/50 p-6 md:p-8 rounded-xl border border-gray-800 text-white relative overflow-hidden group transition-all duration-500 hover:border-blue-500 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] mt-8 md:mt-0">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-900/0 via-blue-900/0 to-blue-900/0 group-hover:from-blue-900/10 group-hover:via-blue-900/5 group-hover:to-blue-900/10 transition-all duration-1000"></div>
-            <h3 className="text-2xl font-semibold mb-6 text-center">
+            <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-center">
               On Average Clients Save With Us
             </h3>
 
@@ -167,7 +167,7 @@ const HeroSection = ({
               {comparisonData.map((item, index) => (
                 <div
                   key={index}
-                  className={`flex justify-between items-center p-4 rounded-lg ${item.provider === "GTM LABS" ? "bg-blue-900/30 border border-blue-500" : "bg-gray-800/50"}`}
+                  className={`flex justify-between items-center p-3 md:p-4 rounded-lg ${item.provider === "GTM LABS" ? "bg-blue-900/30 border border-blue-500" : "bg-gray-800/50"}`}
                 >
                   <div>
                     <h4 className="font-medium">{item.provider}</h4>
@@ -185,7 +185,7 @@ const HeroSection = ({
               ))}
             </div>
 
-            <div className="mt-8 p-4 bg-green-900/20 border border-green-800/50 rounded-lg">
+            <div className="mt-6 md:mt-8 p-3 md:p-4 bg-green-900/20 border border-green-800/50 rounded-lg">
               <div className="flex justify-between items-center">
                 <span className="text-lg">Annual Savings:</span>
                 <span className="text-2xl font-bold text-green-400">
