@@ -67,3 +67,182 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Glitch button effect */
+.glitch-button {
+  position: relative;
+}
+
+.glitch-button::before,
+.glitch-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.glitch-button:hover::before {
+  opacity: 1;
+  animation: glitch-border 1s infinite linear alternate-reverse;
+  border-color: rgba(0, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.glitch-button:hover::after {
+  opacity: 1;
+  animation: glitch-border 1.5s infinite linear alternate-reverse;
+  animation-delay: 0.2s;
+  border-color: rgba(255, 0, 255, 0.5);
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+/* Prevent text selection during dragging */
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Prevent image dragging */
+.no-drag {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+/* Auto-scrolling animation fallback */
+@keyframes autoScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.auto-scroll-container {
+  display: flex;
+  width: max-content;
+  animation: autoScroll 60s linear infinite;
+}
+
+.auto-scroll-container:hover {
+  animation-play-state: paused;
+}
+
+@keyframes glitch-border {
+  0% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0, 0);
+  }
+  5% {
+    clip-path: inset(30% 0 0 0);
+    transform: translate(-2px, 0);
+  }
+  10% {
+    clip-path: inset(0 10% 0 0);
+    transform: translate(2px, 0);
+  }
+  15% {
+    clip-path: inset(0 0 10% 0);
+    transform: translate(0, 2px);
+  }
+  20% {
+    clip-path: inset(0 0 0 30%);
+    transform: translate(0, -2px);
+  }
+  25% {
+    clip-path: inset(10% 10% 10% 10%);
+    transform: translate(-2px, 2px);
+  }
+  30% {
+    clip-path: inset(20% 0 0 20%);
+    transform: translate(2px, -2px);
+  }
+  35% {
+    clip-path: inset(0 20% 20% 0);
+    transform: translate(-2px, -2px);
+  }
+  40% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0, 0);
+  }
+}
+
+/* Arrow drawing animations */
+@keyframes draw-left {
+  0% {
+    stroke-dashoffset: 200;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw-right {
+  0% {
+    stroke-dashoffset: 200;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw-left-arrow {
+  0% {
+    stroke-dashoffset: 40;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw-right-arrow {
+  0% {
+    stroke-dashoffset: 40;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-draw-left {
+  animation: draw-left 1.5s ease-in-out forwards;
+}
+
+.animate-draw-right {
+  animation: draw-right 1.5s ease-in-out forwards;
+}
+
+.animate-draw-left-arrow {
+  animation: draw-left-arrow 0.5s ease-in-out forwards;
+}
+
+.animate-draw-right-arrow {
+  animation: draw-right-arrow 0.5s ease-in-out forwards;
+}

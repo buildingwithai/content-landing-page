@@ -9,7 +9,7 @@ interface HeaderProps {
 
 const Header = ({
   logoUrl = "/logo.svg",
-  mainSiteUrl = "https://www.gtmlabs.com",
+  mainSiteUrl = "https://www.gtmlabs.io",
 }: HeaderProps) => {
   return (
     <header className="fixed w-full bg-black/90 backdrop-blur-sm z-50 border-b border-zinc-800 h-16">

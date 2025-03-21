@@ -18,6 +18,7 @@ interface TestimonialProps {
     company: string;
     role: string;
     avatarColor: string;
+    avatarUrl?: string;
     quote: string;
     rating: number;
   }[];
@@ -40,9 +41,17 @@ const TestimonialCarousel = ({
                 <div className="bg-gray-50 rounded-lg p-8 shadow-sm h-full flex flex-col">
                   <div className="flex items-center mb-6">
                     <div
-                      className={`h-12 w-12 rounded-full overflow-hidden mr-4 flex items-center justify-center bg-gradient-to-br ${testimonial.avatarColor}`}
+                      className={`h-12 w-12 rounded-full overflow-hidden mr-4 flex items-center justify-center ${!testimonial.avatarUrl ? `bg-gradient-to-br ${testimonial.avatarColor}` : ""}`}
                     >
-                      <User className="h-8 w-8 text-white" />
+                      {testimonial.avatarUrl ? (
+                        <img
+                          src={testimonial.avatarUrl}
+                          alt={testimonial.name}
+                          className="h-full w-full object-cover"
+                        />
+                      ) : (
+                        <User className="h-8 w-8 text-white" />
+                      )}
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg text-gray-900">
@@ -88,6 +97,8 @@ const defaultTestimonials = [
     company: "",
     role: "Exec in Culturally Competent Engagement & Design. Entrepreneur. Speaker & Facilitator.",
     avatarColor: "from-purple-500 to-pink-600",
+    avatarUrl:
+      "https://media.licdn.com/dms/image/v2/D4D03AQFcscSku7xnTg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1678232473851?e=1747872000&v=beta&t=AXrI5NjQFiVLnG1EM9gmcIJ8rH29_Ez6tjuCl7XhgD0",
     quote:
       "For over a year, my company was privileged to engage Jovanny as a Product Marketing Manager. He made significant contributions during his tenure, including participating in user research interviews, collaborating with our Product Team, and developing targeted marketing strategies for new features. Jovanny's involvement in user research enabled us to refine user segmentation and validate new features.",
     rating: 5,
@@ -98,6 +109,8 @@ const defaultTestimonials = [
     company: "",
     role: "Human-centered community & vibe curator.",
     avatarColor: "from-blue-500 to-indigo-600",
+    avatarUrl:
+      "https://media.licdn.com/dms/image/v2/D5603AQGixcCASuOxdA/profile-displayphoto-shrink_100_100/B56ZPkwMBEHIAg-/0/1734709658101?e=1747872000&v=beta&t=-Iq2-T1Ky86B1kt58DRCujXElTqOPnQoRhNOHylrv6c",
     quote:
       "Jovanny was awesome! As a Product Marketing Manager, Jovanny consistently brought innovative ideas to the table, helping our team stay ahead of the curve with new tools and strategies to optimize our efficiency & increase our output. His forward-thinking approach and strong communication skills played a key role in shaping our product marketing strategy.",
     rating: 5,
