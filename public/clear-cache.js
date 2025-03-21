@@ -4,8 +4,8 @@ window.addEventListener("load", function () {
   var link =
     document.querySelector("link[rel*='icon']") ||
     document.createElement("link");
-  link.type = "image/x-icon";
+  link.type = "image/png";
   link.rel = "shortcut icon";
-  link.href = "/favicon.ico?v=" + new Date().getTime();
+  link.href = "/GTM LABS LOGO (1).png?v=" + new Date().getTime();
   document.getElementsByTagName("head")[0].appendChild(link);
 });
