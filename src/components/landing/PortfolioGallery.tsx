@@ -431,10 +431,10 @@ const PortfolioGallery = ({
           <Button
             variant="ghost"
             size="icon"
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow-md hidden md:flex"
+            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow-md flex items-center justify-center h-8 w-8 sm:h-10 sm:w-10"
             onClick={scrollLeftBtn}
           >
-            <ArrowLeft className="h-5 w-5" />
+            <ArrowLeft className="h-4 w-4 sm:h-5 sm:w-5" />
           </Button>
 
           <div
@@ -484,10 +484,10 @@ const PortfolioGallery = ({
           <Button
             variant="ghost"
             size="icon"
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow-md hidden md:flex"
+            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow-md flex items-center justify-center h-8 w-8 sm:h-10 sm:w-10"
             onClick={scrollRightBtn}
           >
-            <ArrowRight className="h-5 w-5" />
+            <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
           </Button>
         </div>
 
