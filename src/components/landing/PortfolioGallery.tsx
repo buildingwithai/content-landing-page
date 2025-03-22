@@ -601,7 +601,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
   {
     id: "1",
     title: "Data Governance, Data quality and relevance",
-    category: "Saas/Tech",
+    category: "Software & AI",
     imageUrl: "/image.png",
     clientName: "Deasie",
     description:
@@ -616,7 +616,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
   {
     id: "2",
     title: "AI-Powered Data Analyst",
-    category: "Saas/Tech",
+    category: "Software & AI",
     imageUrl: "/image (1).png",
     clientName: "CamelAI",
     description:
@@ -631,7 +631,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
   {
     id: "3",
     title: "Global Leader in Responsible AI Advocacy",
-    category: "Saas/Tech",
+    category: "Software & AI",
     imageUrl: "/image (2).png",
     clientName: "AI2030",
     description:
@@ -646,7 +646,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
   {
     id: "4",
     title: "Global Leader in Responsible AI Advocacy",
-    category: "Saas/Tech",
+    category: "Software & AI",
     imageUrl: "/image (3).png",
     clientName: "AI2030",
     description:
@@ -661,7 +661,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
   {
     id: "5",
     title: "At-Home Male Fertility Testing and Preservation Service",
-    category: "Male Fertility Services",
+    category: "Healthcare & Wellness",
     imageUrl: "/image (4).png",
     clientName: "Legacy",
     description:
@@ -676,7 +676,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
   {
     id: "6",
     title: "AI-Driven Platform for Automated Software Testing",
-    category: "AI-Powered Software Testing",
+    category: "Software & AI",
     imageUrl: "/image (5).png",
     clientName: "CyberShield Defense",
     description:
@@ -691,7 +691,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
   {
     id: "7",
     title: "AI-Driven Platform for Automated Phone Call Management",
-    category: "AI-Powered Call Center Solutions",
+    category: "Software & AI",
     imageUrl: "/image (6).png",
     clientName: "OpenCall.ai",
     description:
@@ -706,7 +706,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
   {
     id: "8",
     title: "Simplifying Fine-Tuning of Large Language Models for Developers",
-    category: "AI Model Fine-Tuning Platform",
+    category: "Software & AI",
     imageUrl: "/image (7).png",
     clientName: "OpenPipe",
     description:
@@ -721,7 +721,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
   {
     id: "9",
     title: "AI Voice Agent Platform for Call Operations",
-    category: "AI-Powered Call Center Solutions",
+    category: "Software & AI",
     imageUrl: "/image (8).png",
     clientName: "Retell AI",
     description:
@@ -735,8 +735,8 @@ const defaultPortfolioItems: PortfolioItem[] = [
   },
   {
     id: "10",
-    title: "AI-Powered Web Data Extraction Platform​",
-    category: "Web Data Extraction and Automation​",
+    title: "AI-Powered Web Data Extraction Platform",
+    category: "Software & AI",
     imageUrl: "/image (9).png",
     clientName: "Reworkd AI",
     description:
@@ -751,7 +751,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
   {
     id: "11",
     title: "AI-Powered Web Data Extraction Platform",
-    category: "Web Data Extraction and Automation​",
+    category: "Software & AI",
     imageUrl: "/image (10).png",
     clientName: "Reworkd AI",
     description:
@@ -766,7 +766,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
   {
     id: "12",
     title: "Conversational AI for Mental Health Support",
-    category: "Mental Health Technology",
+    category: "Healthcare & Wellness",
     imageUrl: "/image (11).png",
     clientName: "Sonia",
     description:
@@ -781,7 +781,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
   {
     id: "13",
     title: "Comprehensive Web3 Development Platform",
-    category: "Blockchain Development Tools",
+    category: "Software & AI",
     imageUrl: "/image (12).png",
     clientName: "thirdweb",
     description:
@@ -796,7 +796,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
   {
     id: "14",
     title: "AI-Driven Unit Testing Automation",
-    category: "Software Testing Tools",
+    category: "Software & AI",
     imageUrl: "/image (13).png",
     clientName: "Tusk",
     description:
@@ -811,7 +811,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
   {
     id: "15",
     title: "AI-Driven Unit Testing Automation",
-    category: "Software Testing Tools",
+    category: "Software & AI",
     imageUrl: "/image (14).png",
     clientName: "Tusk",
     description:
