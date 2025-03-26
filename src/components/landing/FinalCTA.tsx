@@ -13,7 +13,7 @@ interface FinalCTAProps {
 
 const FinalCTA = ({
   title = "Ready to streamline your content approval process?",
-  description = "Join hundreds of agencies and brands who have simplified their social media workflow with GTM LABS Content Portal.",
+  description = "Join the companies and brands who have simplified their social media workflow with our Content Portal.",
   buttonText = "Let's chat!",
   onButtonClick = () =>
     window.open("https://zcal.co/jovannytovar/content", "_blank"),
@@ -52,7 +52,7 @@ const FinalCTA = ({
                 strokeLinejoin="round"
               />
             </svg>
-            <span>No credit card required</span>
+            <span>72 hour turn around time</span>
           </div>
           <div className="flex items-center">
             <svg
@@ -69,7 +69,7 @@ const FinalCTA = ({
                 strokeLinejoin="round"
               />
             </svg>
-            <span>Free 14-day trial</span>
+            <span>Unlimited revisions</span>
           </div>
           <div className="flex items-center">
             <svg
@@ -86,7 +86,7 @@ const FinalCTA = ({
                 strokeLinejoin="round"
               />
             </svg>
-            <span>Cancel anytime</span>
+            <span>Pause or cancel anytime</span>
           </div>
         </div>
       </div>
