@@ -6,6 +6,7 @@ import HeroSection from "@/components/landing/HeroSection";
 import PortalPreview from "@/components/landing/PortalPreview";
 import PlatformIntegration from "@/components/landing/PlatformIntegration";
 import ValueProposition from "@/components/landing/ValueProposition";
+import TeamCollaboration from "@/components/landing/TeamCollaboration";
 import PortfolioGallery from "@/components/landing/PortfolioGallery";
 import TestimonialCarousel from "@/components/landing/TestimonialCarousel";
 import FinalCTA from "@/components/landing/FinalCTA";
@@ -50,6 +51,7 @@ export default function Home() {
         <div ref={valuePropositionRef}>
           <ValueProposition />
         </div>
+        <TeamCollaboration />
         <div ref={portfolioGalleryRef}>
           <PortfolioGallery />
         </div>

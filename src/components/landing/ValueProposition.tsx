@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Check, Clock, Shield, Zap } from "lucide-react";
+import { Check, Clock, Shield, Zap, MessageSquare, Lock } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -41,15 +41,27 @@ const ValueProposition = ({
     },
     {
       icon: <Shield className="h-10 w-10 text-purple-500" />,
-      title: "Secure Platform",
+      title: "Multilingual Support",
       description:
-        "Enterprise-grade security ensuring your content and brand assets remain protected",
+        "Post daily fresh content in multiple languages to reach local non-English speakers",
     },
     {
       icon: <Zap className="h-10 w-10 text-yellow-500" />,
-      title: "Instant Feedback",
+      title: "Stories & Timeline Posts",
       description:
-        "Real-time commenting and revision tracking for faster content iterations",
+        "Stay top of mind with your audience by posting to timeline feeds across all platforms and Instagram stories (with Facebook stories coming soon)",
+    },
+    {
+      icon: <MessageSquare className="h-10 w-10 text-indigo-500" />,
+      title: "Streamlined Feedback",
+      description:
+        "Comment-based feedback system allows your team & you to request specific changes to copy, design, and other elements",
+    },
+    {
+      icon: <Lock className="h-10 w-10 text-red-500" />,
+      title: "Secure Platform",
+      description:
+        "Enterprise-grade security ensuring your content and brand assets remain protected",
     },
   ],
   ctaText = "Let's chat!",
@@ -66,7 +78,7 @@ const ValueProposition = ({
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {features.map((feature, index) => (
             <Card
               key={index}
